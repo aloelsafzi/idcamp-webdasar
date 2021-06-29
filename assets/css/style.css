@@ -1,0 +1,357 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+  
+  
+  * {
+       font-family: 'Montserrat', sans-serif;
+       box-sizing: border-box;
+       padding: 0;
+       margin: 0;
+    }
+
+    body {
+       background-color: #f6f7fa;
+       font-size: 18px;
+    }
+
+    header > nav {
+      margin: 20px;
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      align-items: center;
+    }
+
+    .nama-aplikasi {
+      background-color: #f7c195;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: #eb6d05 5px 5px;
+      color: #9c4d0d;
+    }
+
+    header > nav > ul {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      align-items: center;
+    }
+    header > nav > ul > li {
+      list-style: none;
+      margin-left: 10px;
+    }
+    header > nav > ul > li > a {
+      text-decoration: none;
+      color: black;
+    }
+
+    header > nav > ul > li > a:hover {
+      background-color: #f7c195;
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: #eb6d05 5px 5px;
+
+    }
+
+    button {
+      border: none;
+      background-color: #eb6d05;
+      height: 35px;
+      color: white;
+      padding: 0px 10px;
+      border-radius: 20px;
+      font-size: medium;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      border: none;
+      background-color: #eb6d05;
+      height: 35px;
+      color: white;
+      padding: 0px 10px;
+      border-radius: 20px;
+      font-size: medium;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: #f7c195 5px 5px;
+    }
+
+    article {
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 20px;
+    }
+
+    main{
+      display: flex;
+    }
+
+    #content {
+      width: 70%;
+    }
+
+    #beranda {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      line-height: 24px;
+      font-weight: lighter;
+
+    }
+
+    #beranda > img {
+      width: 50%;
+    }
+
+    #beranda > section > h2 {
+      line-height: 30px;
+      margin-bottom: 20px;
+    } 
+
+    .fitur {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    .card-fitur {
+      border-radius: 20px;
+      border: whitesmoke solid 2px;
+      width: 300px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .card-fitur > img {
+      height: 200px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .tentang-kami{
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .tentang-kami > img {
+      height: 300px;
+      border-radius: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+
+    .detail-tentang-kami {
+      background-color: whitesmoke;
+      padding: 20px;
+      border-radius: 20px;
+    }
+
+
+    /* Style untuk bagian aside */
+
+    aside{
+     width: 30%;
+    }
+
+    .card-artikel {
+      border: solid whitesmoke 2px;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+
+    .card-artikel:hover {
+      border: solid whitesmoke 2px;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      justify-content: flex-start;
+      cursor: pointer;
+      box-shadow: #f7c195 5px 5px ;
+      align-items: center;
+    }
+
+    .card-artikel > img {
+      border-radius: 20px;
+      height: 150px;
+      margin-right: 10px;
+    }
+
+    .card-artikel > div > h3 {
+      color: #eb6d05;
+      margin-bottom: 10px;
+    }
+
+    .card-artikel > div > p {
+      font-size: 14px;
+    }
+
+    footer {
+      line-height: 30px;
+      height: 200px;
+      background-color: #eb6d05;
+      color: whitesmoke;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-size: smaller;
+    }
+
+    .email {
+      background-color: #f7c195;
+      color: black;
+      padding: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    table {
+      overflow-x: scroll;
+      width: 100%;
+    }
+
+    .on-mobile{
+      display: none;
+    }
+
+    #btn-menu{
+      display: none;
+    }
+
+    /* Mobile */
+     @media screen and (max-width: 513px) {
+
+         main{
+          display: flex;
+          flex-direction: column;
+        }
+
+       #content {
+          width: 100%;
+          display: block;
+        }
+
+        #beranda {
+          flex-direction: column;
+        }
+
+        #beranda > img {
+          width: 100%;
+        }
+
+        .fitur {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card-fitur {
+          width: 100%;
+        }
+
+        .card-fitur {
+          margin-bottom: 20px;
+        }
+
+        .detail-tentang-kami > h3 {
+          text-align: center;
+        }
+
+        .tentang-kami > img {
+          margin:auto;
+          margin-bottom: 20px;
+        }
+
+        aside {
+          width: 100%;
+          display: block;
+        }
+
+        .on-mobile{
+          display: block;
+          text-align: center;
+          font-size: small;
+        }
+
+        table {
+          display: none;
+        }
+    }
+
+    @media screen and (max-width: 658px) {
+      header > nav > ul {
+        display: none;
+        flex-direction: column;
+        padding: 20px;
+        background-color: white;
+        border-radius: 20px;
+        position: fixed;
+        top :100px;
+        right: 10px;
+      }
+
+      header > nav > ul > li {
+        margin-bottom: 20px;
+      }
+
+       #btn-menu{
+          display: inline;
+        }
+    }
+
+     @media screen and (max-width: 1440px) {
+        .card-artikel {
+          flex-direction: column;
+          justify-content: center;
+        }
+
+        .card-artikel > img {
+         margin-bottom: 20px;
+        }
+
+        .card-artikel:hover {
+          flex-direction: column;
+        }
+     }
+
+     @media screen and (max-width: 1204px) {
+        main{
+          display: flex;
+          flex-direction: column;
+        }
+        aside {
+          width: 100%;
+          display: block;
+        }
+         #content {
+          width: 100%;
+          display: block;
+        }
+     }
+
+
+    /* style util */
+
+    .my-2{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    .show{
+      display: flex;
+    }
